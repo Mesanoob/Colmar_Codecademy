@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
 body {
     background-color: grey;
     font-family: poppins;
@@ -8,6 +19,7 @@ body {
     border: dotted red;
     justify-content: space-between;
     padding: 32px 0px 32px 0px;
+    background-color: white;
 }
 
 .logo h1 .firstword{
@@ -43,12 +55,13 @@ a:link{
     border: solid blueviolet;
     display: grid;
     grid-template-columns: 0.6fr 0.4fr;
+    background-color: rgb(211 211 211);
 }
 
 .banner {
     display:flex;
     object-fit: contain;
-    /* padding: 32px 24px 32px 24px; */
+    padding: 32px 24px 32px 24px;
     border:solid orange;
     height: auto;
     width: 100%;
@@ -105,9 +118,64 @@ a:link{
     width:100%;
 }
 
-.middle-right{
-    display:flex;
+.middle-right {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.image-container {
+    margin-bottom: 10px;
+
+}
+
+.text-container {
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+/* Go back edit up  */
+
+.course {
+    display: grid;
+    border: dotted white;
+    
+
+}
+
+.choice{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+    padding: 32px 72px;
+    border: dotted black;
+}
+
+.learn{
+    display: grid;
     justify-content: center;
+    padding: 32px 
+}
+
+.choice img{
+    padding: 16px;
+    height:auto;
+    width: 100%;
+    border :solid blue
+}
+
+.choice h1{
+    border: solid red;
+}
+
+.choice h3{
+    border: solid yellow;
 }
