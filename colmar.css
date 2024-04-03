@@ -1,10 +1,11 @@
 body {
     background-color: grey;
+    font-family: poppins;
 }
 .navbar{
     display: flex;
     align-items: center;
-    border: solid red;
+    border: dotted red;
     justify-content: space-between;
     padding: 32px 0px 32px 0px;
 }
@@ -36,4 +37,77 @@ body {
 
 a:link{
     color: yellow;
+}
+
+.starthere{
+    border: solid blueviolet;
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+}
+
+.banner {
+    display:flex;
+    object-fit: contain;
+    /* padding: 32px 24px 32px 24px; */
+    border:solid orange;
+    height: auto;
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+
+.row {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid snow
+}
+
+.row h1{
+    color: aliceblue;
+    font-size: 3.5em;
+    align-items: center;
+    justify-content: center;
+    width:70%
+}
+
+.row h2{
+    color:aquamarine;
+    width: 70%;
+}
+
+.starthere  button{
+    color: white;
+    width: 70%;
+    height: 10%;
+    font-size: x-large;
+    background-color: rgb(65 65 65);
+}
+
+.middle {
+    display:flex;
+    
+    border: solid green;
+}
+
+.infomain{
+    padding: 32px 24px 32px 24px;
+    width: 60%
+}
+
+.infomain h1{
+    padding-bottom: 24px;
+}
+
+.middle img{
+    width:100%;
+}
+
+.middle-right{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
