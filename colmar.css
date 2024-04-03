@@ -1,0 +1,39 @@
+body {
+    background-color: grey;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    border: solid red;
+    justify-content: space-between;
+    padding: 32px 0px 32px 0px;
+}
+
+.logo h1 .firstword{
+    color: blue
+}
+
+.logo h1 .secondword{
+    color: red;
+}
+
+.logo{
+    height:auto;
+    margin-right: 24px;
+    display:flex;
+    border: solid blue;
+    align-items: center;
+    padding-left: 24px;
+
+}
+
+.links{
+    border: solid green;
+    padding-right: 24px;
+    margin-right:16px;
+    font-size: large;
+}
+
+a:link{
+    color: yellow;
+}
