@@ -10,7 +10,7 @@ html {
     box-sizing: border-box;
 }
 body {
-    background-color: grey;
+    background-color: white;
     font-family: poppins;
 }
 .navbar{
@@ -169,13 +169,66 @@ a:link{
     padding: 16px;
     height:auto;
     width: 100%;
-    border :solid blue
+    border :solid blue;
 }
 
 .choice h1{
     border: solid red;
+    background-color: white;
 }
 
 .choice h3{
     border: solid yellow;
+    background-color: white;
+}
+
+.thesis{
+    display:grid;
+    
+}
+
+.thesis h1 {
+    display: grid;
+    justify-content: center;
+    border: solid pink;
+}
+
+.bottom-text {
+    display: grid;
+    grid-template-rows: repeat(1, min-content);
+    grid-template-columns: [full--start] 0.6fr [center--end center--start] 0.4fr [full--end];
+    padding: 32px 24px 32px 24px;
+    border: solid orange;
+}
+
+.video{
+    width:100%;
+}
+
+.videourban{
+    border: solid white;
+}
+
+.fisma{
+    border: solid green;
+    background-color: #F9F7F6;
+        border-left: 1px solid #E7E7E7;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 3px;
+}
+
+.fismabox{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-column-gap: 5%;
+    align-items: center;
+    border-bottom: 1px solid #E7E7E7;
+    padding: 2rem 0rem 2rem 2rem;
+    border: solid pink;
+    /* top, right, bottom, left*/
+}
+
+.fismabox img {
+    width: 100%;
 }
