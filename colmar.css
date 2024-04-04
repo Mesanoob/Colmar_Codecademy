@@ -6,229 +6,150 @@
     box-sizing: inherit;
 }
 
-html {
-    box-sizing: border-box;
-}
 body {
-    background-color: white;
+    /* background-color: grey; */
     font-family: poppins;
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    border: dotted red;
-    justify-content: space-between;
-    padding: 32px 0px 32px 0px;
+
+nav {
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 32px 24px 32px 24px;
 }
 
-.logo h1 .firstword{
-    color: blue
+.colmar {
+    color: rgb(65 65 65);
 }
 
-.logo h1 .secondword{
-    color: red;
+.academy {
+    color: rgb(142 142 142);
+    font-weight: lighter;
 }
 
-.logo{
-    height:auto;
-    margin-right: 24px;
-    display:flex;
-    border: solid blue;
-    align-items: center;
-    padding-left: 24px;
-
+.links {
+    background-color: white;
+    margin-left: auto;
+    margin-right: 16px;
+    font-weight: light;
 }
 
-.links{
-    border: solid green;
-    padding-right: 24px;
-    margin-right:16px;
-    font-size: large;
+a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-a:link{
-    color: yellow;
+a:hover {
+    color: gold;
 }
 
-.starthere{
-    border: solid blueviolet;
-    display: grid;
-    grid-template-columns: 0.6fr 0.4fr;
+.mainbody {
     background-color: rgb(211 211 211);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    text-align: left;
 }
 
-.banner {
-    display:flex;
-    object-fit: contain;
-    padding: 32px 24px 32px 24px;
-    border:solid orange;
-    height: auto;
-    width: 100%;
-}
-.banner img{
-    width: 100%;
+.mainbody img {
+    width: 60%;
+    padding: 32px 24px;
 }
 
-.row {
-    display:flex;
+.content {
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    border: solid snow
-}
-
-.row h1{
-    color: aliceblue;
-    font-size: 3.5em;
     align-items: center;
-    justify-content: center;
-    width:70%
 }
 
-.row h2{
-    color:aquamarine;
-    width: 70%;
+.content h1 {
+    font-size: 2.3rem;
+    max-width: 400px;
+    margin-top: 0;
+    padding: 1rem;
 }
 
-.starthere  button{
-    color: white;
-    width: 70%;
-    height: 10%;
-    font-size: x-large;
+.content h3 {
+    font-size: 1.2rem;
+    max-width: 400px;
+    padding: 1rem;
+}
+
+button {
     background-color: rgb(65 65 65);
+    color: white;
+    width: 50%;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
 }
 
-.middle {
-    display:flex;
-    
-    border: solid green;
+button:hover {
+    background-color: salmon;
+    transition: 0.7s;
 }
 
-.infomain{
-    padding: 32px 24px 32px 24px;
-    width: 60%
+.childbody {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    background-color: white;
 }
 
-.infomain h1{
-    padding-bottom: 24px;
-}
-
-.middle img{
-    width:100%;
-}
-
-.middle-right {
+.left-body {
+    flex-basis: 60%;
+    padding: 32px 24px;
     display: flex;
     flex-direction: column;
 }
 
-.info-item {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 20px;
-}
-
-.image-container {
-    margin-bottom: 10px;
-
-}
-
-.text-container {
-    display: flex;
-    flex-wrap: row wrap;
-}
-
-/* Go back edit up  */
-
-.course {
-    display: grid;
-    border: dotted white;
-    
-
-}
-
-.choice{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 16px;
-    grid-row-gap: 32px;
-    padding: 32px 72px;
-    border: dotted black;
-}
-
-.learn{
-    display: grid;
-    justify-content: center;
-    padding: 32px 
-}
-
-.choice img{
-    padding: 16px;
-    height:auto;
+.left-body img {
     width: 100%;
-    border :solid blue;
 }
 
-.choice h1{
-    border: solid red;
-    background-color: white;
+.left-body h1,
+.left-body p {
+    margin-top: auto;
 }
 
-.choice h3{
-    border: solid yellow;
-    background-color: white;
+.left-body p:last-child {
+    padding-bottom: 32px;
 }
 
-.thesis{
-    display:grid;
-    
+.right-body {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
-.thesis h1 {
-    display: grid;
-    justify-content: center;
-    border: solid pink;
-}
-
-.bottom-text {
-    display: grid;
-    grid-template-rows: repeat(1, min-content);
-    grid-template-columns: [full--start] 0.6fr [center--end center--start] 0.4fr [full--end];
-    padding: 32px 24px 32px 24px;
-    border: solid orange;
-}
-
-.video{
-    width:100%;
-}
-
-.videourban{
-    border: solid white;
-}
-
-.fisma{
-    border: solid green;
-    background-color: #F9F7F6;
-        border-left: 1px solid #E7E7E7;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-row-gap: 3px;
-}
-
-.fismabox{
-    display: grid;
-    grid-template-columns: 0.4fr 0.6fr;
-    grid-column-gap: 5%;
+.right-body .info-container {
+    display: flex;
     align-items: center;
-    border-bottom: 1px solid #E7E7E7;
-    padding: 2rem 0rem 2rem 2rem;
-    border: solid pink;
-    /* top, right, bottom, left*/
+    gap: 8px;
 }
 
-.fismabox img {
-    width: 100%;
+.right-body img {
+    width: 35%;
+    height: auto;
+}
+
+.right-body .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-body h2,
+.right-body h3,
+.right-body a {
+    margin: 0;
+}
+
+.info-container{
+    padding: 32px;
 }
