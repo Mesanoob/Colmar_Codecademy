@@ -153,3 +153,62 @@ button:hover {
 .info-container{
     padding: 32px;
 }
+
+.course-body{
+    background-color: rgb(231 232 233);
+    padding: 0;
+}
+
+.course img{
+    max-width: 100%;
+    height: auto;
+}
+
+.course-title{
+    text-align: center;
+    padding: 32px;
+} 
+.course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    padding: 32px 72px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: white;
+    padding:16px 8px;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: white;
+    padding: 16px 8px;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: white;
+    padding: 16px 8px;
+}
+
+.div4 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: white;
+    padding: 16px 8px;
+}
+
+.div5 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: white;
+    padding: 16px 8px;
+}
+
+.div6 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: white;
+    padding: 16px 8px;
+}
